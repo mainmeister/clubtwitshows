@@ -1,4 +1,4 @@
-This object will allow you to access you Club Twit videos in you python code. 
+This object will allow you to access you Club Twit videos in your python code. 
 >You need to define an environment variable named "twitcluburl" that contains your personal Club Twit url.
 ```
 from clubtwit import ClubTwit
