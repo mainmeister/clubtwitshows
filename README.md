@@ -3,12 +3,14 @@ This object will allow you to access you Club Twit videos in you python code.
 ```
 from clubtwit import ClubTwit
 
-ct = ClubTwit()
-# get a list of all the shows
-shows = ct.shows
-print(f'Using Club Twit URL: {ct.clubtwit}')
-for show in shows:
-  print(f'{show["Title"]}: {show["Link"]}')
+    ct = ClubTwit()
+    print(f'Using Club Twit URL: {ct.clubtwit_url}')
+    for show in ct.shows:
+        print(f"Title: {show['Title']}\n
+        Description: {show['Description']}\n
+        Link: {show['Link']}\n
+        PubDate: {show['PubDate']}\n
+        Length: {int(show['Length']/(1024*1024)):,} MB\n")
 ```
 #### _Requirments_:
 * lxml==5.3.0
