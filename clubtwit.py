@@ -79,3 +79,8 @@ class ClubTwit:
             }
             
             self.shows.append(show)
+
+if __name__ == "__main__":
+    ct = ClubTwit()
+    for show in ct.shows:
+        print(f"{show['Title']}: {show['Link']}")
