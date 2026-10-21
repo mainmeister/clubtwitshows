@@ -8,7 +8,21 @@ version = "0.1.0"
 description = "A library to access Club Twit shows."
 readme = "README.md"
 requires-python = ">=3.9"
-license = { text = "GPL-3.0" }
+license = { file = "LICENSE" }
+keywords = ["clubtwit", "podcast", "rss", "twit"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Video",
+]
 authors = [
     { name = "Mainmeister" },
 ]
@@ -17,3 +31,8 @@ dependencies = [
     "python-dotenv>=1.2.2",
     "requests>=2.34.1",
 ]
+
+[project.urls]
+Homepage = "https://github.com/mainmeister/clubtwitshows"
+Repository = "https://github.com/mainmeister/clubtwitshows"
+Issues = "https://github.com/mainmeister/clubtwitshows/issues"

@@ -9,7 +9,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 class ClubTwit:
-    def __init__(self):
+    def __init__(self) -> None:
         """Initializes the class and loads the environment variable."""
         load_dotenv()
         self.clubtwit_url = os.getenv("twitcluburl")
@@ -22,7 +22,7 @@ class ClubTwit:
         # Automatically fetch the shows when the object is created
         self._fetch_and_parse_shows()
 
-    def _fetch_and_parse_shows(self):
+    def _fetch_and_parse_shows(self) -> None:
         """Fetches the XML feed from the URL and parses the show data."""
         # Security/Robustness: Add a timeout of 10 seconds to prevent hanging
         try:
